@@ -90,7 +90,7 @@ namespace EditorRpc
                     return legacyClientPath;
                 }
 
-                var packageInfo = PackageInfo.FindForAssetPath("Packages/" + PackageName + "/package.json");
+                var packageInfo = UnityEditor.PackageManager.PackageInfo.FindForAssetPath("Packages/" + PackageName + "/package.json");
                 if (packageInfo != null && !string.IsNullOrEmpty(packageInfo.resolvedPath))
                 {
                     return Path.Combine(packageInfo.resolvedPath, "Tools", "EditorRpc", "Invoke-EditorRpc.ps1");
