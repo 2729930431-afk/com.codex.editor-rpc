@@ -1,0 +1,22 @@
+{
+  "name": "com.codex.editor-rpc",
+  "displayName": "Editor RPC",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "description": "A reusable loopback TCP RPC layer for controlling the open Unity Editor from external tools and AI agents.",
+  "keywords": [
+    "editor",
+    "rpc",
+    "automation",
+    "ai",
+    "tools"
+  ],
+  "category": "Editor",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0"
+  },
+  "author": {
+    "name": "Codex"
+  },
+  "license": "UNLICENSED"
+}
