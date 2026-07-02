@@ -9,6 +9,7 @@ namespace EditorRpc
 
         static partial void RegisterAdvancedMethods();
         static partial void RegisterUiMethods();
+        static partial void RegisterTerrainMethods();
 
         static EditorRpcMethods()
         {
@@ -28,6 +29,7 @@ namespace EditorRpc
             RegisterAssetMethods();
             RegisterMaterialMethods();
             RegisterSceneMethods();
+            RegisterTerrainMethods();
             RegisterAdvancedMethods();
             RegisterUiMethods();
             RegisterConsoleMethods();
@@ -635,6 +637,7 @@ namespace EditorRpc
 
         static partial void RegisterAdvancedExecutors();
         static partial void RegisterUiExecutors();
+        static partial void RegisterTerrainExecutors();
 
         public static void Initialize()
         {
@@ -684,6 +687,7 @@ namespace EditorRpc
             Register("set_scene_object_property", ExecuteSetSceneObjectProperty);
             Register("invoke_scene_object_method", ExecuteInvokeSceneObjectMethod);
             Register("delete_game_object", ExecuteDeleteGameObject);
+            RegisterTerrainExecutors();
             RegisterAdvancedExecutors();
             RegisterUiExecutors();
 

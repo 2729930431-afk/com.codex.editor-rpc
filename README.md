@@ -42,6 +42,8 @@ This package includes only project-agnostic editor automation:
 - UGUI discovery, inspection, creation, RectTransform edits, event binding inspection, and batch UI operations
 - type search, method search, menu search, batch execution, workspace validation, and generic scene rendering statistics
 - material batch assignment across prefab assets or scene hierarchies
+- semantic Terrain creation from a description or structured recipe; generated and repaired heightmaps always receive mandatory smoothing and slope limiting
+- Terrain flat-area reservation for building footprints, with automatic high-ground placement and smoothed transition bands
 
 Project-specific database tools and Scavenger rendering pipeline controls were intentionally excluded.
 
